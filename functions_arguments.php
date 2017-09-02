@@ -7,7 +7,7 @@
 <html>
 
     <head>
-        
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,82 +24,46 @@
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-    
+
     <body>
         <div class="container">
             <h1><?php echo TITLE; ?></h1>
-            
+
             <?php
 
-                function myFirstFunction() {
-                    $a = 0;
-                    
-                    do {
-                        echo "$a &nbsp;";
-                        $a++;
-                    } while( $a <= 100 );
-                }
+              function myFunction() {
+                $a = 0;
 
-                // call the function
-                myFirstFunction();
+                do {
+                  echo "$a &nbsp;";
+                  $a++;
+                } while ($a <= 10);
+              }
+              myfunction();
 
-                function mySecondFunction( $a ) {
-                    do {
-                        echo "$a &nbsp;";
-                        $a++;
-                    } while( $a <= 10 );
-                }
+              function myNextFunction($a, $b) {
+                do {
+                  echo"$a &nbsp;";
+                  $a++;
+                } while ($a <= $b);
+              }
+              echo "<br>";
+              myNextFunction(4, 16);
 
-                // call the function
-                // pass in an argument
-                mySecondFunction( 5 );
-
-
-                function addTogether( $num1, $num2 ) {
-                    $newNum = $num1 + $num2;
-                    echo "$num1 + $num2 = $newNum";
-                }
-
-                addTogether( 39, 128 );
-
+              function add($num1, $num2) {
+                $sum = $num1 + $num2;
+                echo "sum of $num1 and $num2 is $sum";
+              }
+              echo "<br>";
+              add(233, 18);
             ?>
-            
+
         </div>
-        
+
         <!-- jQuery -->
         <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-        
+
         <!-- Bootstrap JS -->
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

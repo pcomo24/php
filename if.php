@@ -7,7 +7,7 @@
 <html>
 
     <head>
-        
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,92 +24,25 @@
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-    
+
     <body>
-        <div class="container">
-            <h1><?php echo TITLE; ?></h1>
-            
-            <?php
-                // IF expression is TRUE, do something
-                // IF expression is FALSE, don't do anything
-                
-                $foo = 99;
-                $bar = 79;
+      <div class="container">
+        <h1><?php echo TITLE; ?></h1>
+          <?php
+            $foo = 100;
+            $bar = 75;
+            if ( $foo > $bar ) {
+              echo "Foo"."($foo)"."is greater than $bar";
+            } else {
+              echo "$foo is not greater than $bar";
+            }
+          ?>
 
-                if ( $foo > $bar ) {
-                    echo "$foo is greater than $bar <br>";
-                }
 
-                // ELSE
-
-                $currentlyListeningTo = "Barenaked Ladies";
-                
-                if ( $currentlyListeningTo == "The Tragically Hip" ) {
-                    
-                    echo "You are listening to $currentlyListeningTo";
-                    
-                } else {
-                    
-                    echo "Taking a wild guess here, you're listening to $currentlyListeningTo <br>";
-                    
-                }
-
-                // ELSEIF
-
-                $favProgrammingLang = "PHP";
-
-                if ( $favProgrammingLang == "C++" ) {
-                    
-                    echo "Your favourite programming language is $favProgrammingLang";
-                    
-                } elseif ( $favProgrammingLang == "PHP" ) {
-                    
-                    echo "Good one! You dig $favProgrammingLang";
-                    
-                } else {
-                    
-                    echo "Guess you don't like PHP or C++. Oh well...";
-                    
-                }
-
-            ?>
-            
-        </div>
-        
         <!-- jQuery -->
         <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-        
+
         <!-- Bootstrap JS -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
